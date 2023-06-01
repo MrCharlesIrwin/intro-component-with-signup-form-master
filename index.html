@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header class="header">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <section class="contacts">
+        <button class="contacts__tryItFree-btn">
+          <p><em>Try it free 7 days</em> then $20/mo. thereafter</p>
+        </button>
+        <form action="#" class="form" novalidate autocomplete="off">
+          <div class="form-wrapper">
+            <input
+              type="text"
+              name="username"
+              class="form-wrapper__input-items form-wrapper__first-name"
+              placeholder="First Name"
+              id="FirstName"
+            />
+            <div class="error">First Name cannot be empty</div>
+            <input
+              type="text"
+              class="form-wrapper__input-items form-wrapper__last-name"
+              placeholder="Last Name"
+              id="LastName"
+            />
+            <div class="error">Last Name cannot be empty</div>
+
+            <input
+              type="email"
+              class="form-wrapper__input-items form-wrapper__email"
+              placeholder="Email Address"
+              id="email"
+            />
+            <div class="error">Looks like this is not an email</div>
+
+            <input
+              type="password"
+              class="form-wrapper__input-items form-wrapper__password"
+              placeholder="Password"
+              id="password"
+            />
+            <div class="error">Password cannot be empty</div>
+
+            <input
+              type="submit"
+              class="form-wrapper__btn"
+              value="Claim your free trial "
+            />
+            <p class="form-wrapper__terms">
+              By clicking the button, you are agreeing to our
+              <em>Terms and Services</em>
+            </p>
+          </div>
+        </form>
+      </section>
+    </article>
+  </body>
+</html>
